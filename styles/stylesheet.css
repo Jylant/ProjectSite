@@ -1,0 +1,88 @@
+body {
+    background-color: #e92bba;
+    background-image: repeating-conic-gradient(at 77% 23%, #d9499b 15%, #a87dc4 30%, #5ef0e9 10% );
+    background-size: stretch;
+    background-repeat: no-repeat round;
+}
+
+h1 {
+    font-family: 'Magneto';
+    font-size: 8vw;
+    text-align: center;
+    color: transparent;
+}
+
+#selite {
+    color:rgb(186, 224, 227);
+    font-style: oblique, bold;
+    font-family: 'Gigi';
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+#declaration {
+    color: chartreuse;
+    font-style: bold;
+    font-family: 'Chiller';
+    font-size: 7vw;
+    text-align: center;
+    margin-top: 15%;
+}
+
+img {
+    padding: 4pt;
+    margin: 5%;
+    float: left;
+    background-color: #de2478;
+    border-radius: 11%;
+}
+
+aside {
+    float: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 8px;
+    right: 50%;
+}
+
+.navButton {
+    display: inline-block;
+    background-color: #360ba4;
+    color: #bcd995;
+    border: none;
+    padding: 10px 20px;
+    margin: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.subMenu {
+    display: inline-flex;
+    background-color: #360ba4;
+    color: #bcd995;
+    border: none;
+    padding: 10px 20px;
+    margin: 2px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.subMenu:hover {
+    background-color: #2926cf;
+    display: inline-block;
+    color: #bcd995;
+}
+
+
+.navButton:hover {
+    background-color: #2926cf;
+    display: inline-block;
+    color: #bcd995;
+}

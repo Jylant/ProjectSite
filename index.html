@@ -9,30 +9,32 @@
         <script src="scripts/script.js"></script>
     </head>
     <body>
-        <h1 style="background: linear-gradient(to right, #360ba4, #2926cf, #2eccf4);
-        background-clip: text; -webkit-background-clip: text;">Stupid Project here!</h1>
-        <h1 style="text-shadow: #642dea 24px 5px; z-index: -1; position: absolute;
-        top: 0;">Stupid Project here!</h1>
-        
-        <nav id="navbar" display="inline-block" position="relative">
-            <button id="navButton" class="navButton">Menu</button>
+        <h1 style="background: linear-gradient(to right, #170448, #2926cf, #2eccf4);
+        background-clip: text; -webkit-background-clip: text;">Kyllä tämä tästä vielä luonnistuu!</h1>
+        <h1 style="background: linear-gradient(to right, #8067c0, #130f6d, #0a7878);
+        background-clip: text; -webkit-background-clip: text; z-index: -1; position: absolute;
+        top: 4px; right: 7px;">Kyllä tämä tästä vielä luonnistuu!</h1>
+        <header>
             <nav>
-                <button class="subMenu navButton">Home</button>
-                <button class="subMenu navButton"><a href="#">About</a></button>
-                <button class="subMenu navButton"><a href="#">Contact</a></button>
-                <button class="subMenu navButton"><a href="https://github.com/Jylant" target="_blank">Github</a></button>
-                <button class="subMenu navButton"><a href="#">Blog</a></button>
+                <button id="nav-toggle">Menu</button>
+                <ul class="nav-menu">
+                        <button class="nav-item">Home</button>
+                        <button class="nav-item">About</button>
+                        <button class="nav-item">Contact</button>
+                        <button class="nav-item">Github</button>
+                </ul>
             </nav>
-        </nav>
+        </header>
         <aside>
-            <a href="https://github.com/Jylant" target="_blank">
-                <img src="./images/Moon.jpg" alt="Kuukuva" style="width: 21vw; height: auto;">
+            <a href="https://github.com/Jylant" target="_blank" id="linkki">
+                <img src="./images/Moon.jpg" alt="Kuukuva" style="width: 21vw; height: auto;" id="linkkikuva">
             </a>
             <figcaption id="selite">
                 <p>Not the picture, mind you.</p>
             </figcaption>
         </aside>
         <p id="declaration">I made this</p>
+        <p>So, this is some nice filler text for my thing <br>which should be this website I'm supposed to make <br>but have no idea on the subject</p>
         <footer>
             <button id="nappi">This should be at the bottom</button>
         </footer>

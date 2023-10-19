@@ -1,62 +1,3 @@
-body {
-    background-color: #e92bba;
-    background-image: repeating-conic-gradient(at 77% 23%, #c9295e 15%, #824aa8 30%, #26dbd8 10% );
-    -webkit-background-composite: padding-box;
-    background-repeat: no-repeat round;
-}
-
-.submenu {
-    display: none;
-}
-
-h1 {
-    font-family: 'Magneto';
-    font-size: 8vw;
-    text-align: center;
-    color: transparent;
-    margin-left: 40px;
-}
-
-#selite {
-    color:rgb(186, 224, 227);
-    font-style: oblique, bold;
-    font-family: 'Gigi';
-    font-size: 1.2vw;
-    text-align: center;
-}
-
-p {
-    color: rgb(180, 238, 93);
-    font-style: oblique;
-    font-family: 'Chiller';
-    font-size: 1.6vw;
-    text-align: center;
-}
-#declaration {
-    color: chartreuse;
-    font-style: bold;
-    font-size: 7vw;
-    margin-top: 15%;
-}
-
-img {
-    padding: 4pt;
-    margin: 5%;
-    float: left;
-    background-color: #de2478;
-    border-radius: 11%;
-}
-
-aside {
-    float: left;
-}
-
-footer {
-    position: fixed;
-    bottom: 2px;
-    right: 40%;
-}
-
 /* Hide the navigation menu by default */
 .nav-menu {
     display: none;
@@ -67,13 +8,11 @@ footer {
     color: #bcd995;
     border: none;
     padding: 6px 12px;
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     font-weight: bold;
     border-radius: 5px;
-    min-width: 50px;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
 }
 
 #nav-toggle:hover {
@@ -93,12 +32,13 @@ footer {
 /* Style the navigation menu */
 
 .nav-menu {
-    position: sticky;
+    position: relative;
     top: 0px;
     left: 0;
-    background-color: transparent;
+    background-color: #de2478;;
     padding-top: 2px;
     margin: 0px;
+    
     list-style-type: none;
     width: min-content;
 }
@@ -110,12 +50,11 @@ footer {
     border: none;
     padding: 6px 12px;
     margin: 2px;
-    font-size: 0.7vw;
+    font-size: 0.4rem;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 50px;
 }
 
 .nav-menu :hover {
@@ -123,13 +62,13 @@ footer {
     color: #bcd995;
 }
 
-.nav-item {
+.nav-menu a {
     display: block;
     padding: 0;
     text-decoration: none;
     color: #bcd995;
 }
-.nav-item:hover {
+.nav-menu a:hover {
     background-color: #2926cf;
     color: #37e490;
 }
@@ -140,9 +79,6 @@ ul {
     padding: 0%;
     border: none;
     box-sizing: content-box;
-}
-
-header {
-    position: absolute;
-    top: 2vh;
+    background-color: #de2478;;
+    color: #de2478;
 }

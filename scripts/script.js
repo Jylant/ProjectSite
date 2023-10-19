@@ -1,40 +1,55 @@
 // Path: scripts/script.js
 
 document.addEventListener('DOMContentLoaded', function() {
-    const navBar = document.getElementById('navbar'); // select the navbar element
+    console.log("DOM loaded");
     const button = document.getElementById('nappi'); // select the button element
-    const navButton = document.getElementById('navButton'); // select the button element
-    const subButtons = document.getElementsByClassName('subMenu'); // select the button element
-    console.log(subButtons);
-    for (const buttons in subButtons) {
-        buttons.setAttribute('style', 'display: none; visibility: hidden;');
-        buttons.addEventListener('click', handleMenuClick, bubbling = true);
-    }
+    const navButton = document.getElementById('nav-toggle'); // select the button element
+    const navItems = document.getElementsByClassName('nav-item');
 
-    //navBar.addEventListener('mouseover', handleMouseOver, bubbling = true);
     button.addEventListener('click', handleClick);
-    navButton.addEventListener('click', handleMenuClick, bubbling = true);
+    navButton.addEventListener('click', handleClick, bubbling = true);
     console.log("Listeners added");
 
-    /*function handleMouseOver(EventTarget) {
-        if (EventTarget == navButton) {
-            navBar.firstChild.style.display = "inline-flex";
-            navBar.firstChild.style.visibility = "visible";
-        } else {
-            navBar.firstChild.style.display = "none";
-            navBar.firstChild.style.visibility = "hidden";
+    function handleClick(Event) {
+        if (Event.target == button) {
+            button.textContent = "Javascript says hello, too!";
+        } else if (Event.target.class == "nav-item") {
+            console.log("nav-item clicked");
+            const xhr = new XMLHttpRequest();
+            const linkki = document.getElementById('linkki');
+            switch (Event.target.innertext) {
+                case "Home":
+                    xhr.open('GET', './images/Moon.jpg', true);
+                    linkki.setAttribute("href", "https://github.com/Jylant");
+                    break;
+                case "About":
+                    xhr.open('GET', './about.html', true);
+                    linkki.setAttribute("href", "https://github.com/Jylant");
+                    break;
+                case "Contact":
+                    xhr.open('GET', './contact.html', true);
+                    linkki.setAttribute("href", "https://github.com/Jylant");
+                    break;
+                case "Github":
+                    xhr.open('GET', './images/favicon.ico', true);
+                    linkki.setAttribute("href", "https://github.com/Jylant");
+                    break;
+                default:
+                    console.log("No match");
+                    break;
+            }
+            
+            xhr.onload = function() {
+                if (this.status === 200) {
+                    const newContent = this.responseText;
+                    const elementToReplace = document.getElementById('linkkikuva');
+                    elementToReplace.setAttribute("src", newContent);
+                }
+            }
+            xhr.send();
         }
-    }*/
-
-    function handleClick(EventTarget) {
-        button.textContent = "Javascript says hello, too!";
-        console.log(EventTarget.nodeName);
+        console.log(Event.target.nodeName);
     }
 
-    function handleMenuClick() {
-        for (const buttons in subButtons) {
-            buttons.setAttribute('style', 'display: inline-flex; visibility: visible;');
-        }
-    }
 });
 

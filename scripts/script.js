@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const navItems = document.getElementsByClassName('nav-item');
 
     button.addEventListener('click', handleClick);
-    navButton.addEventListener('click', handleClick, bubbling = true);
+    navButton.addEventListener('click', handleClick);
+    for (const item in navItems) {
+        item.addEventListener('click', handleClick);
+    }
     console.log("Listeners added");
 
     function handleClick(Event) {
@@ -17,10 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("nav-item clicked");
             const xhr = new XMLHttpRequest();
             const linkki = document.getElementById('linkki');
+            console.log(Event.target.innertext);
             switch (Event.target.innertext) {
                 case "Home":
-                    xhr.open('GET', './images/Moon.jpg', true);
-                    linkki.setAttribute("href", "https://github.com/Jylant");
+                    xhr.open('GET', '/scripts/kuu.txt', true);
+                    linkki.setAttribute("href", "#");
                     break;
                 case "About":
                     xhr.open('GET', './about.html', true);
@@ -31,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     linkki.setAttribute("href", "https://github.com/Jylant");
                     break;
                 case "Github":
-                    xhr.open('GET', './images/favicon.ico', true);
+                    xhr.open('GET', 'scripts/hedron.txt', true);
                     linkki.setAttribute("href", "https://github.com/Jylant");
                     break;
                 default:

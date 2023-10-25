@@ -1,6 +1,6 @@
 body {
     background-color: #e92bba;
-    background-image: repeating-conic-gradient(at 20px 20px, #b82153 16%, #5a3198 27%, #4fe4d7 12%);
+    background-image: repeating-conic-gradient(at 20px 20px, #89e1ef 16%, #c1cf22 27%, #e09711 12%);
     -webkit-background-composite: padding-box;
     background-repeat: no-repeat round;
 }
@@ -11,26 +11,34 @@ body {
 
 h1 {
     font-family: 'Magneto';
-    font-size: 8vw;
-    text-align: center;
-    color: transparent;
-    margin-left: 40px;
+    font-size: 3rem;
+    text-align: start;
+    color: #9323d8;
+    margin-left: 50px;
 }
 
 #otsake {
+    font-family: 'Magneto';
+    font-size: 4vw;
+    text-align: center;
     background: linear-gradient(to right, #170448, #2926cf, #2eccf4);
     background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
 }
 
 #shadow {
+    font-family: 'Magneto';
+    font-size: 4vw;
+    text-align: center;
     background: linear-gradient(to right, #796ed9, #430e67, #086c5d);
     background-clip: text;
     -webkit-background-clip: text;
     z-index: -1;
-    position:
-    absolute;
+    position: absolute;
     top: 3px;
+    left: 7.1%;
+    color: transparent;
 }
 
 #selite {
@@ -42,14 +50,14 @@ h1 {
 }
 
 p {
-    color: #b4ee5d;
+    color: #ee5d99;
     font-style: oblique;
     font-family: 'Chiller';
     font-size: 1.6vw;
     text-align: center;
 }
 #declaration {
-    color: chartreuse;
+    color: rgb(194, 43, 116);
     font-style: bold;
     font-size: 7vw;
     margin-top: 15%;
@@ -145,11 +153,16 @@ footer {
     text-decoration: none;
     color: #bcd995;
 }
+.nav-item a {
+    color: #bcd995;
+}
 .nav-item:hover {
     background-color: #2926cf;
     color: #37e490;
 }
-
+.nav-item a:hover {
+    color: #37e490;
+}
 ul {
     
     margin: 0%;
@@ -158,7 +171,15 @@ ul {
     box-sizing: content-box;
 }
 
-header {
-    position: absolute;
-    top: 2vh;
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #360ba4;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+nav {
+    position: fixed;
+    top: 5px;
 }

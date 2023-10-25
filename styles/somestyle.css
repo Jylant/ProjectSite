@@ -40,7 +40,7 @@
     margin: 0px;
     
     list-style-type: none;
-    width: min-content;
+    width: max-content;
 }
 
 .nav-menu button {

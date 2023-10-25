@@ -1,40 +1,25 @@
-// Path: scripts/script.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Create a div element to hold the datetime
+    const datetimeDiv = document.createElement('div');
+    datetimeDiv.style.position = 'fixed';
+    datetimeDiv.style.top = '0';
+    datetimeDiv.style.right = '0';
+    datetimeDiv.style.backgroundColor = 'transparent';
+    datetimeDiv.style.padding = '10px';
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log("DOM loaded");
-    const button = document.getElementById('nappi'); // select the button element
-    const navButton = document.getElementById('nav-toggle'); // select the button element
+    // Update the datetime every second
+    setInterval(() => {
+            const now = new Date();
+            const day = now.getDate().toString().padStart(2, '0');
+            const month = (now.getMonth() + 1).toString().padStart(2, '0');
+            const year = now.getFullYear().toString();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            datetimeDiv.textContent = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+    }, 1000);
 
-    button.addEventListener('click', handleClick);
-    navButton.addEventListener('click', handleClick);
-    console.log("Listeners added");
-
-    function handleClick(Event) {
-        if (Event.target == button) {
-            button.textContent = "Javascript says hello, too!";
-        } else if (Event.target.class == "nav-item") {
-            console.log("nav-item clicked");
-            const linkki = document.getElementById('ruutu').contentWindow.document.getElementById('kuva');
-            switch (Event.target.innertext) {
-                case "Home":
-                    linkki.src="favicon.ico";
-                    break;
-                case "About":
-                    linkki.src="Moon.jpg";
-                    break;
-                case "Contact":
-                    linkki.setAttribute("href", "https://github.com/Jylant");
-                    break;
-                case "Github":
-                    linkki.setAttribute("href", "https://github.com/Jylant");
-                    break;
-                default:
-                    console.log("No match");
-                    break;
-            }
-        }
-        console.log(Event.target.nodeName);
-    }
-
+    // Add the datetime div to the page
+    document.body.appendChild(datetimeDiv);
 });
 

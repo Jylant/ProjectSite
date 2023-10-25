@@ -1,6 +1,6 @@
 body {
     background-color: #e92bba;
-    background-image: repeating-conic-gradient(at 77% 23%, #c9295e 15%, #824aa8 30%, #26dbd8 10% );
+    background-image: repeating-conic-gradient(at 20px 20px, #b82153 16%, #5a3198 27%, #4fe4d7 12%);
     -webkit-background-composite: padding-box;
     background-repeat: no-repeat round;
 }
@@ -15,6 +15,22 @@ h1 {
     text-align: center;
     color: transparent;
     margin-left: 40px;
+}
+
+#otsake {
+    background: linear-gradient(to right, #170448, #2926cf, #2eccf4);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#shadow {
+    background: linear-gradient(to right, #796ed9, #430e67, #086c5d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    z-index: -1;
+    position:
+    absolute;
+    top: 3px;
 }
 
 #selite {
@@ -110,12 +126,12 @@ footer {
     border: none;
     padding: 6px 12px;
     margin: 2px;
-    font-size: 0.7vw;
+    font-size: 0.75vw;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
-    min-width: 50px;
+    min-width: 60px;
 }
 
 .nav-menu :hover {

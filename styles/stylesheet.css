@@ -1,6 +1,6 @@
 body {
     background-color: #e92bba;
-    background-image: repeating-conic-gradient(at 20px 20px, #e18523 16%, #dfe241 27%, #1bb489 12%);
+    background-image: repeating-conic-gradient(at 20px 20px, #e12392 16%, #182059 27%, #1bb489 12%);
     -webkit-background-composite: padding-box;
     background-repeat: no-repeat round;
 }
@@ -49,14 +49,15 @@ h1 {
 }
 
 p {
-    color: #ee5d99;
+    color: #eda8d8;
     font-style: oblique;
     font-family: 'Chiller';
     font-size: 1.6vw;
     text-align: center;
 }
 #declaration {
-    color: rgb(194, 43, 116);
+    color: #8015aa;
+    text-shadow: 1px 1px 4px #2eccf4;
     font-style: bold;
     font-size: 7vw;
     margin-top: 15%;
@@ -167,7 +168,7 @@ ul {
 h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #360ba4;
+    color: #300c8a;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -181,8 +182,8 @@ nav {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    width: 35vw;
-    height: 72vh;
+    width: 315px;
+    height: 440px;
     box-sizing: content-box;
 
     border: 2px solid #bcd995;

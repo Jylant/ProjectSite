@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     datetimeDiv.style.position = 'fixed';
     datetimeDiv.style.top = '0';
     datetimeDiv.style.right = '0';
-    datetimeDiv.style.backgroundColor = 'transparent';
+    datetimeDiv.style.backgroundColor = '#ffffff32';
     datetimeDiv.style.padding = '10px';
 
     // Update the datetime every second
@@ -21,5 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add the datetime div to the page
     document.body.appendChild(datetimeDiv);
+    const nappi = document.getElementById("nappi");
+    nappi.addEventListener("click", posChange);
+
+    function posChange() {
+        if (nappi.style.top == "96%") {
+            nappi.style.top = "3%";
+        } else {
+            nappi.style.top = "96%";
+        }
+    }
 });
 

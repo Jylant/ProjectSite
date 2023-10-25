@@ -1,6 +1,6 @@
 body {
     background-color: #e92bba;
-    background-image: repeating-conic-gradient(at 20px 20px, #89e1ef 16%, #c1cf22 27%, #e09711 12%);
+    background-image: repeating-conic-gradient(at 20px 20px, #e18523 16%, #dfe241 27%, #1bb489 12%);
     -webkit-background-composite: padding-box;
     background-repeat: no-repeat round;
 }
@@ -14,14 +14,13 @@ h1 {
     font-size: 3rem;
     text-align: start;
     color: #9323d8;
-    margin-left: 50px;
+    margin-left: 5rem;
 }
 
 #otsake {
     font-family: 'Magneto';
     font-size: 4vw;
-    text-align: center;
-    background: linear-gradient(to right, #170448, #2926cf, #2eccf4);
+    background: linear-gradient(to right, #2d094b, #2926cf, #2eccf4);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -31,13 +30,13 @@ h1 {
     font-family: 'Magneto';
     font-size: 4vw;
     text-align: center;
-    background: linear-gradient(to right, #796ed9, #430e67, #086c5d);
+    background: linear-gradient(to right, #336c72, #d352c2, #58086c);
     background-clip: text;
     -webkit-background-clip: text;
     z-index: -1;
     position: absolute;
     top: 3px;
-    left: 7.1%;
+    left: 12px;
     color: transparent;
 }
 
@@ -75,12 +74,6 @@ aside {
     float: left;
 }
 
-footer {
-    position: fixed;
-    bottom: 2px;
-    right: 40%;
-}
-
 /* Hide the navigation menu by default */
 .nav-menu {
     display: none;
@@ -91,7 +84,7 @@ footer {
     color: #bcd995;
     border: none;
     padding: 6px 12px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     font-weight: bold;
     border-radius: 5px;
     min-width: 50px;
@@ -124,7 +117,7 @@ footer {
     padding-top: 2px;
     margin: 0px;
     list-style-type: none;
-    width: min-content;
+    width: max-content;
 }
 
 .nav-menu button {
@@ -182,4 +175,16 @@ h2 {
 nav {
     position: fixed;
     top: 5px;
+}
+
+#ruutu {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 35vw;
+    height: 72vh;
+    box-sizing: content-box;
+
+    border: 2px solid #bcd995;
+    image-rendering: auto;
 }
